@@ -1,0 +1,60 @@
+.app {
+  padding: 12rem 0;
+  background-color: #fff;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.imgSlide {
+  position: relative;
+  img {
+    z-index: 1;
+  }
+  span {
+    background-color: #fff;
+    max-width: 190px;
+    position: absolute;
+    right: 120px;
+    bottom: -33px;
+    border-radius: 50%;
+    img {
+      animation: rotate 9s linear infinite;
+    }
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.emoji {
+  z-index: 2000;
+  bottom: 44px;
+  right: 185px;
+  position: absolute;
+  max-width: 60px;
+}
+.right {
+  h4{
+    margin-bottom: 17px;
+    font-weight: 700;
+    color: #147efb;
+    text-transform: uppercase;
+  }
+  h3{
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  p{
+    color: #767676;
+    font-size: 17px;
+    font-weight: 500;
+    
+  }
+}

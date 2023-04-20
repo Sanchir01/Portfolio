@@ -1,8 +1,17 @@
 import React from 'react';
 import styles from './Contact.module.scss';
+
 const Content = () => {
+  const img:string[] = [
+    'https://stefantopalovicdev.vercel.app/static/media/css3.9cecabbf6ce67609c48bc4f280a11002.svg',
+    'https://stefantopalovicdev.vercel.app/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg',
+    'https://stefantopalovicdev.vercel.app/static/media/javascript.de4c2594613e34b15666206bbede7327.svg',
+    'https://stefantopalovicdev.vercel.app/static/media/react.afac9c43724070bf6674f2692b7356a9.svg',
+    'https://stefantopalovicdev.vercel.app/static/media/tailwind.79614a5f61617ba49a0891494521226b.svg',
+    'https://stefantopalovicdev.vercel.app/static/media/scss.67cd0525916c4cdea4eb3abd8ae11137.svg',
+  ];
   return (
-    <section className={styles.app}>
+    <section id="Home" className={styles.app}>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.main}>
@@ -16,7 +25,9 @@ const Content = () => {
                   alt="hand"
                 />
               </div>
-              <p className='text-'>Привет, Я Емгушов Санчир. Фронтенд разработчик со стажем работы 2 года</p>
+              <p className="text-">
+                Привет, Я Емгушов Санчир. Фронтенд разработчик со стажем работы 2 года
+              </p>
               <span className="flex gap-2">
                 <a
                   className="hover:"
@@ -55,6 +66,18 @@ const Content = () => {
               </span>
             </div>
             <div className={styles.img}></div>
+          </div>
+          <div className={styles.skills}>
+            <p>Стак технолигий</p>
+            <div className={styles.logos}>
+              <ul>
+                {
+                  img.map(logos => (
+                    <li><img src={logos} alt={logos} /></li>
+                  ))
+                }
+              </ul>
+            </div>
           </div>
         </div>
       </div>

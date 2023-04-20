@@ -1,23 +1,19 @@
-import React from 'react';
+import { Link } from 'react-scroll';
 import styles from './nav.module.scss';
 const Nav = () => {
+  const nav: string[] = ['Home', 'About', 'Projects', 'Contacts'];
   return (
     <div id="home" className={styles.app}>
       <h2 className="font-bold">Sanchir</h2>
       <nav className={styles.nav}>
         <ul>
-          <a href="#home">
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            <li>About</li>
-          </a>
-          <a href="#projects">
-            <li>Projects</li>
-          </a>
-          <a href="#contact">
-            <li>Contacts</li>
-          </a>
+          {nav.map((text) => (
+            <li>
+              <Link to={text} spy={true} smooth={true} offset={50} duration={200}>
+                {text}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
