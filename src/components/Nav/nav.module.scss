@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px 25px 50px;
+  font-size: 1.5rem;
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  z-index: 2;
+}
+.nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.nav li {
+  display: list-item;
+  align-items: center;
+}
