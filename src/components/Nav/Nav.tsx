@@ -36,7 +36,7 @@ const Nav = () => {
         </ul>
       </nav>
       <div onClick={() => setNav(!nave)} className={styles.burger}>
-        {nave ? <AiOutlineMenu size={40} /> : <AiOutlineClose size={40} />}
+        {!nave ? <AiOutlineMenu size={40} /> : <AiOutlineClose size={40} />}
       </div>
     </div>
   );
