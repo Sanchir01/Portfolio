@@ -1,0 +1,119 @@
+.app {
+  padding: 150px 0;
+  background-color: #f9f9f9;
+  @media (max-width: 600px) {
+   padding: 30px 0;
+  }
+}
+.grid {
+  grid-gap: 50px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  height: auto;
+  width: 100%;
+}
+.all {
+  display: flex;
+  flex-direction: column;
+  p {
+    color: #147efb;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    @media (max-width: 1050px) {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-size: 17px;
+      padding-bottom: 20px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #2d2e32;
+    font-weight: 700;
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+}
+.block {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  gap: 100px;
+  @media (max-width: 1040px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 900px) {
+    gap: 30px;
+  }
+}
+.img {
+  max-height: 530px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  width: 100%;
+
+  a {
+    cursor: pointer;
+    transition: transform 10s ease-in-out 0s;
+    transform: translateY(0%);
+    img {
+      object-fit: cover;
+      width: auto;
+    }
+    img:hover {
+      transition: transform 10s ease-in-out 0s;
+      transform: translateY(-22%);
+    }
+  }
+}
+.text {
+  display: flex;
+  //justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  @media (max-width: 1050px) {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #767676;
+    margin-bottom: 20px;
+  }
+}
+
+.stack {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  p {
+    padding: 10px;
+    color: black;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}

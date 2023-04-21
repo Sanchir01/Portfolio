@@ -1,6 +1,12 @@
 .app {
   padding: 12rem 0;
   background-color: #fff;
+  @media (max-width:1050px) {
+    padding: 50px;
+  }
+  @media (max-width:550px) {
+    padding: 10px;
+  }
 }
 
 .content {
@@ -8,6 +14,13 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
+  @media(max-width:1050px){
+    display: flex;;
+    flex-direction: column;
+  }
+}
+.mac{
+  border-radius:1rem;
 }
 .imgSlide {
   position: relative;
@@ -21,6 +34,9 @@
     right: 120px;
     bottom: -33px;
     border-radius: 50%;
+    @media(max-width:1050px){
+      display: none;
+    }
     img {
       animation: rotate 9s linear infinite;
     }
@@ -37,8 +53,18 @@
   right: 185px;
   position: absolute;
   max-width: 60px;
+  @media(max-width:1050px){
+    display: none;
+  }
 }
 .right {
+  @media (max-width:1050px) {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   h4{
     margin-bottom: 17px;
     font-weight: 700;
@@ -55,6 +81,8 @@
     color: #767676;
     font-size: 17px;
     font-weight: 500;
-    
+    @media (max-width:500px) {
+      font-size: 14px;
+    }
   }
 }

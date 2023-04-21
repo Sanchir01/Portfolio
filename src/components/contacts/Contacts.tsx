@@ -29,17 +29,16 @@ const Contacts = () => {
               </a>
             </span>
             <div className={styles.info}>
-              <h5>ВК</h5>
-              <p><a href="">Емгушов Санчир</a></p>
+              <a href="https://vk.com/id142407579" target="_blank" rel="noopener noreferrer">
+                {' '}
+                <h5>ВК</h5>
+                <p>Емгушов Санчир</p>
+              </a>
             </div>
           </div>
           <div className={styles.box}>
             <span>
-              <a
-                title="vk"
-                href="https://t.me/Sanchir01"
-                target="_blank"
-                rel="noopener noreferrer">
+              <a title="vk" href="https://t.me/Sanchir01" target="_blank" rel="noopener noreferrer">
                 <svg
                   className="w-[29px]"
                   data-name="Layer 1"
@@ -56,7 +55,9 @@ const Contacts = () => {
             </span>
             <div className={styles.info}>
               <h5>Телеграм</h5>
-              <p><a href="">Емгушов Санчир</a></p>
+              <a title="telega" href="https://t.me/Sanchir01" target="_blank" rel="noopener noreferrer">
+                <p>Емгушов Санчир</p>
+              </a>
             </div>
           </div>
         </div>

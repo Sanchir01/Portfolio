@@ -11,3 +11,6 @@ html{
   max-width: 1160px;
   padding: 0 10px;
 }
+.app{
+  position: relative;
+}

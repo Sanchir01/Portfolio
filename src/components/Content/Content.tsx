@@ -16,7 +16,7 @@ const Content = () => {
         <div className={styles.content}>
           <div className={styles.main}>
             <div className={styles.left}>
-              <div className="">
+              <div className={styles.title}>
                 <h1>Frontend React Developer</h1>
                 <img
                   width={70}
@@ -73,7 +73,7 @@ const Content = () => {
               <ul>
                 {
                   img.map(logos => (
-                    <li><img src={logos} alt={logos} /></li>
+                    <li><img key={logos} src={logos} alt={logos} /></li>
                   ))
                 }
               </ul>

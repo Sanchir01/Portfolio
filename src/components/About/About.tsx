@@ -7,7 +7,7 @@ const About = () => {
           <div className={styles.left}>
             <div className={styles.imgSlide}>
               <img
-                className="rounded-xl max-w-[410px] max-h-[350px]"
+                className={styles.mac}
                 src="https://appleinsider.ru/wp-content/uploads/2022/01/apple_macbook_alps_2022-750x548.jpg"
                 alt="mac"
               />
@@ -26,7 +26,7 @@ const About = () => {
           </div>
           <div className={styles.right}>
             <h4>About</h4>
-            <h3>Fhont-end разработчик</h3>
+            <h3>Front-end разработчик</h3>
             <p>
               Будучи младшим фронтенд-разработчиком, я обладаю внушительным арсеналом навыков в
               области HTML, CSS, JavaScript, React, Tailwind и SCSS. Я преуспеваю в разработке и
