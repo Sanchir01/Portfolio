@@ -11,7 +11,7 @@ const Projects = () => {
             <div className={styles.block}>
               <div className={styles.img}>
                 <a href="https://pizzas-2.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <img width={530} src="/assets/pizzas-2_vercel.webp" alt="pizza" />
+                  <img width={530} src="https://i.ibb.co/8NqRTQ5/pizzas-2-vercel-1.webp "alt="pizza" />
                 </a>
               </div>
               <div className={styles.text}>
