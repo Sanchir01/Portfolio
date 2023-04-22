@@ -22,6 +22,7 @@ const Nav = () => {
           {nav.map((text, index) => (
             <li>
               <Link
+              onClick={() => setNav(!nave)}
                 className="hover:text-blue-500"
                 key={index}
                 to={text}

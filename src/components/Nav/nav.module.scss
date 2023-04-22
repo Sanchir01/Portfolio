@@ -40,22 +40,24 @@
     width: 100%;
     height: 100vh;
     background-color: #fff;
+    transition: all .3s ease-in-out ;
   }
 }
 .nav li {
   display: list-item;
-  align-items: center;
+  
 }
-.active{
+.active {
   left: 0;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .burger {
   display: none;
   @media (max-width: 1050px) {
     display: block;
-    z-index: 20;
-   
+    z-index: 20;   
+    transition: all .3s ease-in-out ;
   }
 }
